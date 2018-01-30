@@ -4,3 +4,4 @@
 .gcc-flags.json
 .tar.gz
 credentials.h
+.sconsign.dblite

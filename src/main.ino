@@ -6,7 +6,7 @@
 *  Your IR receiver should be connected to the pin defined here
 */
 #define RECV_PIN A2
-#define LEDpin 15
+#define PCrelay 15
 #define Max_IR 4
 
 IRrecv irrecv(RECV_PIN);
@@ -20,8 +20,8 @@ void setup()
 {
   Serial.begin(9600);
   irrecv.enableIRIn(); // Start the receiver
-  digitalWrite(LEDpin, LOW);
-  pinMode(LEDpin, OUTPUT);
+  digitalWrite(PCrelay, LOW);
+  pinMode(PCrelay, OUTPUT);
 }
 
 
@@ -114,7 +114,7 @@ void loop() {
         TV_on();
         LED_on();
         irrecv.enableIRIn();
-        digitalWrite(LEDpin, HIGH);
+        digitalWrite(PCrelay, HIGH);
         delay(100);
       }
       else
@@ -127,6 +127,6 @@ void loop() {
         // Serial.println(results.decode_type);
     irrecv.resume(); // Receive the next value
   }
-  digitalWrite(LEDpin, LOW);
+  digitalWrite(PCrelay, LOW);
 
 }
