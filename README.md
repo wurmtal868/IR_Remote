@@ -1,2 +1,2 @@
-# IR_Remote
+# IR-Remote
 IR-Remote control for a HTPC
