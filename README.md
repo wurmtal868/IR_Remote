@@ -14,4 +14,4 @@ It can easily be adjusted to any other IR remote that is supported by the Arduin
 
 Required Arduino Libraries: https://github.com/z3t0/Arduino-IRremote
 
-To run the Python scripts you need the programm XTE to be installed. On Ubuntu based systems you find it in the package "xautomation"
+To run the Python scripts you need the program XTE to be installed. On Ubuntu based systems you find it in the package "xautomation"
